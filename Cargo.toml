@@ -1,0 +1,22 @@
+
+[package]
+name = "nexcore-proof-of-meaning"
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.85"
+authors = ["NexVigilant Team <team@nexvigilant.com>"]
+license = "LicenseRef-Proprietary"
+description = "Chemistry-inspired semantic transformation engine — provable regulatory terminology equivalence"
+
+[dependencies]
+nexcore-error = { workspace = true }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = { version = "1.0.120" }
+nexcore-id = { workspace = true }
+nexcore-chrono = { workspace = true }
+ordered-float = { version = "4", features = ["serde"] }
+nexcore-lex-primitiva = { version = "0.1.0", path = "../nexcore-lex-primitiva", registry = "nexcore" }
+
+
+[lints]
+workspace = true
